@@ -138,15 +138,32 @@
 		table, td, tr, th{
 			width: 80%;
 			border: 0.1vw white solid;
-			padding: 1vw;
+			padding: 0.25vw;
 			text-align: center;
 			border-collapse: collapse;
 			}
 			
 		.pack{
 			font-family: futara;
-			font-size: 1.5vw;
+			font-size: 0.75vw;
 			font-style: italic;
+			}
+			
+		.download{
+			font-family: Helvetica;
+			background-color: green;
+			border-radius: 3vw;
+			color: white;
+			font-weight:bold;
+			padding: 1vw;
+			font-size: 0.75vw;
+			text-align: center;
+			transition: 0.3s;
+			}
+			
+		.download:hover {
+			background-color:white;
+			color: green;
 			}
 		
 	</style>
@@ -176,7 +193,7 @@
 		</tr>
 		<tr>
 			<td><h3 class="pack">Volume I: The Beginning</h3></td>
-			<td>&dArr;</td>
+			<td><a href="www.youtube.com"><button class="download">&dArr;</button></a></td>
 		</tr>
 	  </table>
 	<h2>Dashboard</h2>
