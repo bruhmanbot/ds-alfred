@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+    <head>
+		<style>
+		body {
+		font-family: Helvetica;
+		color: white;
+		background-color: rgb(24,24,24);
+		margin-top: 5vw;
+		margin-left: 15vw;
+		margin-right: 15vw;
+		margin-bottom: 5vw;
+		overflow: auto;
+		background-image: url('blue_bg.png');
+		background-repeat: no-repeat;
+		line-height: 80%;
+		}
+		
+		.paragraph{
+		font-family: Helvetica;
+		font-size: 0.75vw;
+		font-weight: bold;
+		}
+		
+		#quote{
+		font-family: futara;
+		font-size: 0.75vw;
+		font-style:italic;
+		}
+		
+		.large{
+		font-size: 3vw;
+		color: white;
+		}
+		
+		small{
+		font-size: 1vw;
+		}
+		
+		#multimedia{
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+		}
+		
+		.header{
+		outline-style: solid;
+		outline-width: 0.6vw;
+		width: 100%;
+		align = center;
+		margin-top: 25px;
+		background-image: linear-gradient(cyan, blue);
+		}
+		
+		
+		.cmd{
+		background-color: rgba(0, 0, 0, 0.35);
+		border: 6px solid #FFFFFF;
+		padding-left: 0.75vw;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 25px;
+		transition-duration: 0.5s;
+		line-height: 90%;
+		}
+		
+		.cmd:hover{
+		background-color: rgba(255, 255, 255, 0.75);
+		border: 6px solid #000000;
+		color: rgb(0, 0, 0);
+		transition-duration: 0.5s;
+		}
+		
+		h3{
+		font-family: monospace;
+		}
+		
+		
+	</style>
+        <title>Pandora-Ma Guide</title>
+    </head>
+
+    <body>
+	<h1 class='large'>Pandora-ma Commands Guide</h1>
+	<h2>Command prefix: '.'</h2>
+	<p class='small'>Type a '.' before every command. For example: <i>.ma_reg</i></p>
+	<p class='small'>The currency used by Pandora-ma is Dharkmi (DRM).</p>
+	<div class='cmd'>
+		<h2>ma_reg</h2>
+		<h3>ma_reg</h3>
+		<p>Registers a gambling account based on your discord username. This step is required before participating in any mahjong gaming.</p>
+	</div>
+	
+	<div class='cmd'>
+		<h2>ma_list</h2>
+		<h3>ma_list</h3>
+		<p>Returns the current balance of all players. The names are listed by order of registration. Players registered earlier are higher up on the list.</p>
+	</div>
+	
+	<div class='cmd'>
+		<h2>ma_bal</h2>
+		<h3>ma_bal (username)</h3>
+		<p>Returns the current balance of the specified user. Use the target's discord username e.g. <i>jleungnotveteran</i></p>
+	</div>
+	
+	<div class='cmd'>
+	<h2>ma_load</h2>
+	<h3>ma_load (username1) (username2) (username3) (username4)</h3>
+	<p>Loads the 4 players into a game so that Dharkmi gained/lost after every single round can be calculated. The order of the 4 players does not matter. All 4 users must be registered.</p>
+	</div>
+	
+	<div class='cmd'>
+	<h2>ma_trans</h2>
+	<h3>ma_trans (winner) (points) (loser)</h3>
+	<p>Transfers the correct amount of Dharkmi based on points of the winning hand from the loser(s) to the winner. If the winner wins by a self-drawn tile, input <i>"self"</i> in the losers field. The 3 other players will be charged accordingly.</p>
+	</div>
+	
+	<div class='cmd'>
+	<h2>ma_add</h2>
+	<h3>ma_trans (username) (amount)</h3>
+	<p>Adds a specified amount to a user's balance.</p>
+	<p class='small'><i>Note: You must be Pandora's father to use this command. For some reason she refuses to help everyone else</i></p>
+	</div>
+	
+	</body>
+</html>
